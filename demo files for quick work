@@ -1,0 +1,6 @@
+            'gender',
+            'occupation',
+            'phone',
+            'address',
+            'email')->unique(,
+            'password'
