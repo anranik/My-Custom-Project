@@ -21,15 +21,18 @@ class StoreTeacherRequest extends FormRequest
      *
      * @return array
      */
+
     public function rules()
     {
         return [
             'name' => 'required',
             'gender' => 'required',
+            'qualification' => 'required',
             'designation' => 'required',
             'birthday' => 'required',
             'phone' => 'required',
-            'address' => 'required',
+            'present_address' => 'required',
+            'permanent_address' => 'required',
             'email' => 'required|unique:students|unique:teachers|unique:users|unique:guardians',
             'password' => 'required',
         ];

@@ -128,6 +128,13 @@ return [
 	"management" => "Teacher Management",
 	"main" => "Teachers",
 	],
+	"stuffs" => [
+	"all" => "All Stuffs",
+	"create" => "Create Stuff",
+	"edit" => "Edit Stuff",
+	"management" => "Stuff Management",
+	"main" => "Stuffs",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

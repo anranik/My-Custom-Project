@@ -29,7 +29,7 @@ class UpdateGuardianRequest extends FormRequest
             'occupation' => 'required',
             'phone' => 'required',
             'address' => 'required',
-            'email' => 'required|unique:students|unique:teachers|unique:users|unique:guardians',
+            'email' => 'required|unique:students|unique:teachers|unique:users',
             'password' => 'required',
         ];
     }

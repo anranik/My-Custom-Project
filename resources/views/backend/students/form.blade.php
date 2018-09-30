@@ -38,6 +38,14 @@
                 </div><!--col-lg-10-->
             </div><!--form control-->
 
+            <div class="form-group">
+                {{ Form::label('section', trans('validation.attributes.backend.students.section'), ['class' => 'col-lg-2 control-label required']) }}
+
+                <div class="col-lg-10">
+                    {{ Form::text('section', null, ['class' => 'form-control box-size', 'placeholder' => trans('validation.attributes.backend.students.class'), 'required' => 'required']) }}
+                </div><!--col-lg-10-->
+            </div><!--form control-->
+
 
             <div class="form-group">
                 {{ Form::label('roll', trans('validation.attributes.backend.students.roll'), ['class' => 'col-lg-2 control-label required']) }}
@@ -56,12 +64,28 @@
                 </div><!--col-lg-10-->
             </div><!--form control-->
 
-
             <div class="form-group">
-                {{ Form::label('address', trans('validation.attributes.backend.students.address'), ['class' => 'col-lg-2 control-label required']) }}
+                {{ Form::label('previous_school', trans('validation.attributes.backend.students.previous_school'), ['class' => 'col-lg-2 control-label']) }}
 
                 <div class="col-lg-10">
-                    {{ Form::text('address', null, ['class' => 'form-control box-size', 'placeholder' => trans('validation.attributes.backend.students.address'), 'required' => 'required']) }}
+                    {{ Form::text('previous_school', null, ['class' => 'form-control box-size', 'placeholder' => trans('validation.attributes.backend.students.previous_school')]) }}
+                </div><!--col-lg-10-->
+            </div><!--form control-->
+
+
+            <div class="form-group">
+                {{ Form::label('present_address', trans('validation.attributes.backend.students.present_address'), ['class' => 'col-lg-2 control-label required']) }}
+
+                <div class="col-lg-10">
+                    {{ Form::text('present_address', null, ['class' => 'form-control box-size', 'placeholder' => trans('validation.attributes.backend.students.present_address'), 'required' => 'required']) }}
+                </div><!--col-lg-10-->
+            </div><!--form control-->
+
+            <div class="form-group">
+                {{ Form::label('permanent_address', trans('validation.attributes.backend.students.permanent_address'), ['class' => 'col-lg-2 control-label required']) }}
+
+                <div class="col-lg-10">
+                    {{ Form::text('permanent_address', null, ['class' => 'form-control box-size', 'placeholder' => trans('validation.attributes.backend.students.permanent_address'), 'required' => 'required']) }}
                 </div><!--col-lg-10-->
             </div><!--form control-->
 

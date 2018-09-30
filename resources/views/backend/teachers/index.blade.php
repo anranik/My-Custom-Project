@@ -22,12 +22,14 @@
                     <thead>
                         <tr>
                             <th>{{ trans('labels.backend.teachers.table.id') }}</th>
-                            <th>{{ trans('labels.backend.teachers.table.createdat') }}</th>
+                            <th>{{ trans('labels.backend.teachers.table.name') }}</th>
+                            <th>{{ trans('labels.backend.teachers.table.designation') }}</th>
                             <th>{{ trans('labels.general.actions') }}</th>
                         </tr>
                     </thead>
                     <thead class="transparent-bg">
                         <tr>
+                            <th></th>
                             <th></th>
                             <th></th>
                             <th></th>
@@ -55,7 +57,8 @@
                 },
                 columns: [
                     {data: 'id', name: '{{config('module.teachers.table')}}.id'},
-                    {data: 'created_at', name: '{{config('module.teachers.table')}}.created_at'},
+                    {data: 'name', name: '{{config('module.teachers.table')}}.name'},
+                    {data: 'designation', name: '{{config('module.teachers.table')}}.designation'},
                     {data: 'actions', name: 'actions', searchable: false, sortable: false}
                 ],
                 order: [[0, "asc"]],

@@ -4,14 +4,14 @@
 
 @section('page-header')
     <h1>
-        {{ trans('labels.backend.guardians.table.show') }}
+        {{ trans('labels.backend.students.table.show') }}
     </h1>
 @endsection
 
 @section('content')
     <div class="box box-info">
         <div class="box-header with-border">
-            <h3 class="box-title">{{ trans('labels.backend.teachers.table.show') }}</h3>
+            <h3 class="box-title">{{ trans('labels.backend.students.table.show') }}</h3>
         </div><!-- /.box-header -->
 
         <div class="box-body">
@@ -28,7 +28,7 @@
                 <div class="tab-content">
 
                     <div role="tabpanel" class="tab-pane mt-30 active" id="overview">
-                        @include('backend.teachers.tabs')
+                        @include('backend.students.tabs')
                     </div><!--tab overview profile-->
 
                 </div><!--tab content-->

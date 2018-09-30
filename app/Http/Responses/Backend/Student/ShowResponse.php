@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Responses\Backend\Teacher;
+namespace App\Http\Responses\Backend\Student;
 
 use Illuminate\Contracts\Support\Responsable;
 
@@ -9,14 +9,14 @@ class ShowResponse implements Responsable
     /**
      * @var \App\Models\Access\User\User
      */
-    protected $teacher;
+    protected $student;
 
     /**
      * @param \App\Models\Access\User\User $user
      */
-    public function __construct($teacher)
+    public function __construct($student)
     {
-        $this->teacher = $teacher;
+        $this->student = $student;
     }
 
     /**
@@ -28,6 +28,6 @@ class ShowResponse implements Responsable
      */
     public function toResponse($request)
     {
-        return view('backend.teachers.show')->withTeacher($this->teacher);
+        return view('backend.students.show')->withStudent($this->student);
     }
 }

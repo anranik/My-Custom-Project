@@ -29,4 +29,7 @@ return [
 	"teachers" => [
 	"table" => "teachers",
 	],
+	"stuffs" => [
+	"table" => "stuffs",
+	],
 ];

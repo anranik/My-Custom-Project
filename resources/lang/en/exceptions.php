@@ -106,6 +106,13 @@ return [
 	"not_found" => "That Teacher does not exist.",
 	"update_error" => "There was a problem updating this Teacher. Please try again.",
 	],
+	"stuffs" => [
+	"already_exists" => "That Stuff already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this Stuff. Please try again.",
+	"delete_error" => "There was a problem deleting this Stuff. Please try again.",
+	"not_found" => "That Stuff does not exist.",
+	"update_error" => "There was a problem updating this Stuff. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

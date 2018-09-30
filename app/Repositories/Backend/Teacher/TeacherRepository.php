@@ -30,6 +30,8 @@ class TeacherRepository extends BaseRepository
         return $this->query()
             ->select([
                 config('module.teachers.table').'.id',
+                config('module.teachers.table').'.name',
+                config('module.teachers.table').'.designation',
                 config('module.teachers.table').'.created_at',
                 config('module.teachers.table').'.updated_at',
             ]);

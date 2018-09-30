@@ -8,6 +8,7 @@ use App\Models\Guardian\Guardian;
 use App\Exceptions\GeneralException;
 use App\Repositories\BaseRepository;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Hash;
 
 /**
  * Class GuardianRepository.
@@ -47,6 +48,7 @@ class GuardianRepository extends BaseRepository
     {
         $guardian = self::MODEL;
         $guardian = new $guardian();
+        $input['password'] = Hash::make($input['password']);
         if ($guardian->create($input)) {
             return true;
         }
@@ -63,6 +65,7 @@ class GuardianRepository extends BaseRepository
      */
     public function update(Guardian $guardian, array $input)
     {
+        $input['password'] = Hash::make($input['password']);
     	if ($guardian->update($input))
             return true;
 

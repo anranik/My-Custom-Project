@@ -6,6 +6,11 @@
     </tr>
 
     <tr>
+        <th>{{ trans('labels.backend.teachers.table.tabs.qualification') }}</th>
+        <td>{{ $teacher->qualification }}</td>
+    </tr>
+
+    <tr>
         <th>{{ trans('labels.backend.teachers.table.tabs.designation') }}</th>
         <td>{{ $teacher->designation }}</td>
     </tr>
@@ -21,8 +26,16 @@
     </tr>
 
     <tr>
-        <th>{{ trans('labels.backend.teachers.table.tabs.address') }}</th>
-        <td>{!! $teacher->address !!}</td>
+        <th>{{ trans('labels.backend.teachers.table.tabs.previous_school') }}</th>
+        <td>{!! $teacher->previous_school !!}</td>
+    </tr>
+    <tr>
+        <th>{{ trans('labels.backend.teachers.table.tabs.present_address') }}</th>
+        <td>{!! $teacher->present_address !!}</td>
+    </tr>
+    <tr>
+        <th>{{ trans('labels.backend.teachers.table.tabs.permanent_address') }}</th>
+        <td>{!! $teacher->permanent_address !!}</td>
     </tr>
     <tr>
         <th>{{ trans('labels.backend.teachers.table.tabs.email') }}</th>

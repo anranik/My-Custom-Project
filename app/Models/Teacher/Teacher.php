@@ -30,8 +30,9 @@ class Teacher extends Model
      * Mass Assignable fields of model
      * @var array
      */
-    protected $fillable = [
 
+    protected $fillable = [
+        'name','qualification','designation','birthday','gender','phone','present_address','permanent_address','previous_school','email','password',
     ];
 
     /**
@@ -48,7 +49,8 @@ class Teacher extends Model
      */
     protected $dates = [
         'created_at',
-        'updated_at'
+        'updated_at',
+        'deleted_at'
     ];
 
     /**

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Requests\Backend\Teacher;
+namespace App\Http\Requests\Backend\Student;
 
 use App\Http\Requests\Request;
 
 /**
  * Class ShowUserRequest.
  */
-class ShowTeacherRequest extends Request
+class ShowStudentRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -16,7 +16,7 @@ class ShowTeacherRequest extends Request
      */
     public function authorize()
     {
-        return access()->allow('show-teacher');
+        return access()->allow('show-student');
     }
 
     /**

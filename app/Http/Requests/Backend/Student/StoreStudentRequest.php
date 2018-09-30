@@ -27,12 +27,15 @@ class StoreStudentRequest extends FormRequest
             //Put your rules for the request in here
             'name' => 'required',
              'gender' => 'required',
+             'section' => 'required',
+             'previous_school' => 'required',
              'birthday' => 'required',
              'phone' => 'required',
              'class' => 'required',
              'roll' => 'required',
              'guardian_id' => 'required',
-             'address' => 'required',
+             'present_address' => 'required',
+             'permanent_address' => 'required',
              'email' => 'required|unique:students|unique:teachers|unique:users|unique:guardians',
              'password' => 'required',
             //Further, see the documentation : https://laravel.com/docs/5.4/validation#creating-form-requests

@@ -19,6 +19,7 @@ trait StudentAttribute
     {
         return '<div class="btn-group action-btn">
                 '.$this->getEditButtonAttribute("edit-student", "admin.students.edit").'
+                '.$this->getViewButtonAttribute("show-student", "admin.students.show").'
                 '.$this->getDeleteButtonAttribute("delete-student", "admin.students.destroy").'
                 </div>';
     }

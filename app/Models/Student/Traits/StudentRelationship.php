@@ -19,4 +19,7 @@ trait StudentRelationship
         $this->belongsTo(User::class);
     }
      */
+    public function guardian(){
+        return $this->belongsTo('App\Guardian');
+    }
 }

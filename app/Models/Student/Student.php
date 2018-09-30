@@ -31,7 +31,7 @@ class Student extends Model
      * @var array
      */
     protected $fillable = [
-        'name','gender','phone','roll','email','birthday','email','phone','password','guardian_id','class','address','student_image'
+        'name','gender','phone','section','previous_school','roll','email','birthday','email','phone','password','guardian_id','class','present_address','permanent_address','student_image'
     ];
 
     /**
@@ -47,7 +47,8 @@ class Student extends Model
      */
     protected $dates = [
         'created_at',
-        'updated_at'
+        'updated_at',
+        'deleted_at'
     ];
 
     /**

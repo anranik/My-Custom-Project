@@ -4,7 +4,7 @@
 
 @section('page-header')
     <h1>
-        {{ trans('labels.backend.guardians.table.show') }}
+        {{ trans('labels.backend.teachers.table.show') }}
     </h1>
 @endsection
 

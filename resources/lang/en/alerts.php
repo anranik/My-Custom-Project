@@ -73,5 +73,10 @@ return [
 	"deleted" => "The Teacher was successfully deleted.",
 	"updated" => "The Teacher was successfully updated.",
 	],
+	"stuffs" => [
+	"created" => "The Stuff was successfully created.",
+	"deleted" => "The Stuff was successfully deleted.",
+	"updated" => "The Stuff was successfully updated.",
+	],
 	],
 ];

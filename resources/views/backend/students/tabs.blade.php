@@ -1,55 +1,67 @@
 <table class="table table-striped table-hover">
     <tr>
-        <th>{{ trans('labels.backend.teachers.table.tabs.name') }}</th>
-        <td>{{ $teacher->name }}</td>
-
+        <th>{{ trans('labels.backend.students.table.tabs.name') }}</th>
+        <td>{{ $student->name }}</td>
     </tr>
 
     <tr>
-        <th>{{ trans('labels.backend.teachers.table.tabs.qualification') }}</th>
-        <td>{{ $teacher->qualification }}</td>
+        <th>{{ trans('labels.backend.students.table.tabs.gender') }}</th>
+        <td>{{ $student->gender }}</td>
     </tr>
 
     <tr>
-        <th>{{ trans('labels.backend.teachers.table.tabs.designation') }}</th>
-        <td>{{ $teacher->designation }}</td>
+        <th>{{ trans('labels.backend.students.table.tabs.birthday') }}</th>
+        <td>{{ $student->birthday }}</td>
     </tr>
 
     <tr>
-        <th>{{ trans('labels.backend.teachers.table.tabs.gender') }}</th>
-        <td>{!! $teacher->gender !!}</td>
+        <th>{{ trans('labels.backend.students.table.tabs.guardian') }}</th>
+        <td>{!! $student->guardian_id !!}</td>
+    </tr>
+    <tr>
+        <th>{{ trans('labels.backend.students.table.tabs.phone') }}</th>
+        <td>{!! $student->phone !!}</td>
     </tr>
 
     <tr>
-        <th>{{ trans('labels.backend.teachers.table.tabs.phone') }}</th>
-        <td>{!! $teacher->phone !!}</td>
+        <th>{{ trans('labels.backend.students.table.tabs.section') }}</th>
+        <td>{!! $student->section !!}</td>
+    </tr>
+    <tr>
+        <th>{{ trans('labels.backend.students.table.tabs.class') }}</th>
+        <td>{!! $student->class !!}</td>
     </tr>
 
     <tr>
-        <th>{{ trans('labels.backend.teachers.table.tabs.previous_school') }}</th>
-        <td>{!! $teacher->previous_school !!}</td>
+        <th>{{ trans('labels.backend.students.table.tabs.email') }}</th>
+        <td>{!! $student->roll !!}</td>
     </tr>
     <tr>
-        <th>{{ trans('labels.backend.teachers.table.tabs.present_address') }}</th>
-        <td>{!! $teacher->present_address !!}</td>
+        <th>{{ trans('labels.backend.students.table.tabs.previous_school') }}</th>
+        <td>{!! $student->previous_school !!}</td>
     </tr>
     <tr>
-        <th>{{ trans('labels.backend.teachers.table.tabs.permanent_address') }}</th>
-        <td>{!! $teacher->permanent_address !!}</td>
+        <th>{{ trans('labels.backend.students.table.tabs.present_address') }}</th>
+        <td>{!! $student->present_address !!}</td>
     </tr>
     <tr>
-        <th>{{ trans('labels.backend.teachers.table.tabs.email') }}</th>
-        <td>{!! $teacher->email !!}</td>
+        <th>{{ trans('labels.backend.students.table.tabs.permanent_address') }}</th>
+        <td>{!! $student->permanent_address !!}</td>
+    </tr>
+
+    <tr>
+        <th>{{ trans('labels.backend.students.table.tabs.email') }}</th>
+        <td>{!! $student->email !!}</td>
     </tr>
 
     <tr>
         <th>{{ trans('labels.backend.access.users.tabs.content.overview.created_at') }}</th>
-        <td>{{ $teacher->created_at }} ({{ $teacher->created_at->diffForHumans() }})</td>
+        <td>{{ $student->created_at }} ({{ $student->created_at->diffForHumans() }})</td>
     </tr>
 
     <tr>
         <th>{{ trans('labels.backend.access.users.tabs.content.overview.last_updated') }}</th>
-        <td>{{ $teacher->updated_at }} ({{ $teacher->updated_at->diffForHumans() }})</td>
+        <td>{{ $student->updated_at }} ({{ $student->updated_at->diffForHumans() }})</td>
     </tr>
 
 </table>

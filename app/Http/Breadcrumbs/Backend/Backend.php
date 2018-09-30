@@ -21,3 +21,4 @@ require __DIR__.'/LogViewer.php';
 require __DIR__.'/Student.php';
 require __DIR__.'/Guardian.php';
 require __DIR__.'/Teacher.php';
+require __DIR__.'/Stuff.php';

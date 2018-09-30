@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Backend\Student;
 
+use App\Http\Requests\Backend\Student\ShowStudentRequest;
 use App\Models\Student\Student;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -13,6 +14,10 @@ use App\Http\Requests\Backend\Student\EditStudentRequest;
 use App\Http\Requests\Backend\Student\UpdateStudentRequest;
 use App\Http\Requests\Backend\Student\DeleteStudentRequest;
 use App\Models\Guardian\Guardian;
+use App\Http\Responses\Backend\Student\ShowResponse;
+
+
+
 
 /**
  * StudentsController
@@ -20,19 +25,23 @@ use App\Models\Guardian\Guardian;
 class StudentsController extends Controller
 {
     /**
+     * contructor to initialize repository object
+     * @param StudentRepository $repository;
+     */
+
+    public function __construct(StudentRepository $repository)
+    {
+        $this->repository = $repository;
+    }
+
+
+    /**
      * variable to store the repository object
      * @var StudentRepository
      */
     protected $repository;
 
-    /**
-     * contructor to initialize repository object
-     * @param StudentRepository $repository;
-     */
-    public function __construct(StudentRepository $repository)
-    {
-        $this->repository = $repository;
-    }
+
 
     /**
      * Display a listing of the resource.
@@ -75,6 +84,16 @@ class StudentsController extends Controller
         $this->repository->create($input);
         //return with successfull message
         return redirect()->route('admin.students.index')->withFlashSuccess(trans('alerts.backend.students.created'));
+    }
+    /**
+     * @param \App\Models\Student\                         $guardian
+     * @param \App\Http\Requests\Backend\Student\ShowStudentRequest $request
+     *
+     * @return \App\Http\Responses\Backend\Teacher\ShowResponse
+     */
+    public function show(Student $student, ShowStudentRequest $request)
+    {
+        return new ShowResponse($student);
     }
     /**
      * Show the form for editing the specified resource.
